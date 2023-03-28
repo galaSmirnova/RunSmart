@@ -1,0 +1,43 @@
+.advantages {
+    padding: 69px 0 78px 0;
+    background-color: $advatages-background;
+    color: $title;
+
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 247px;
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__subtitle {
+        margin-top: 38px;
+        color: $title;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: 26px;
+        font-size: 14px;
+        font-weight: 300;
+
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+
+}
