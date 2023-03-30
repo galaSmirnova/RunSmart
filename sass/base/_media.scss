@@ -70,6 +70,15 @@
     }
 }
 
+@media (max-width: 640px) {
+    .carousel {
+
+        &__inner {
+            width: 150px;
+        }
+    }
+}
+
 @media (max-width: 575px) {
     .header {
         &__logo {
