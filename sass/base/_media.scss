@@ -6,6 +6,17 @@
     .promo {
         background-position-x: 25%;
     }
+
+    .carousel {
+        &__inner {
+            width: 550px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -68,13 +79,15 @@
     .visible {
         display: none;
     }
-}
 
-@media (max-width: 640px) {
     .carousel {
-
         &__inner {
-            width: 150px;
+            width: 450px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }
@@ -132,10 +145,11 @@
             margin-top: 15px;
         }
     }
+
     .title {
         font-size: 26px;
     }
-    
+
     .title_left {
         line-height: 36px;
         font-size: 26px;
@@ -145,9 +159,44 @@
         font-size: 18px;
         margin-top: 30px;
     }
-    
-}
 
+    .carousel {
+        &__inner {
+            width: 300px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+
+            li {
+                margin: 0 10px;
+
+                button {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    text-indent: -9999px;
+                    border: none;
+                    background-color: #cbcbcb;
+                }
+            }
+            li.slick-active {
+                button{
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 320px) {
     .header {
@@ -182,7 +231,7 @@
             font-size: 14px;
         }
     }
-   
+
     .title {
         font-size: 20px;
         line-height: 30px;
@@ -195,5 +244,15 @@
 
     .feed-form {
         width: 100%;
+    }
+    .carousel {
+        &__inner {
+            width: 250px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 }

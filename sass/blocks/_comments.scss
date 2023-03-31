@@ -1,0 +1,49 @@
+.comments {
+    padding-bottom: 71px;
+
+    &__item {
+        margin-bottom: 100px;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        display: block;
+        margin-right: 60px;
+        width: 169px;
+        height: 169px;
+    }
+
+    &__container {
+        padding-right: 60px;
+    }
+
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    
+    &__subtitle {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    &__text {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+}
