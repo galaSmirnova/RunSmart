@@ -17,6 +17,11 @@
             }
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -88,9 +93,9 @@
 
     .catalog {
         padding-bottom: 50px;
-        &__content {
-            justify-content: space-evenly;
-        }
+        // &__content {
+        //     justify-content: space-evenly;
+        // }
     }
 }
 
