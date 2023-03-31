@@ -3,18 +3,34 @@
 $(document).ready(function(){
   $('.carousel__inner').slick({
       speed: 1200,
-      adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+      adaptiveHeight: false,
+      prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/left.png"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/right.png"></button>',
       responsive: [
-          {
-              breakpoint: 992,
-              settings: {
-                  dots: true,
-                  arrows: false
-              }
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
           }
+        },
+        {
+          breakpoint: 575,
+          settings: {            
+            slidesToShow: 1,
+            dots: true,
+            arrows: false            
+          }
+        }
       ]
+      // responsive: [
+      //     {
+      //         breakpoint: 992,
+      //         settings: {
+      //             dots: true,
+      //             arrows: false
+      //         }
+      //     }
+      // ]
   });
   
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
